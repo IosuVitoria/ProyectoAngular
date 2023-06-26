@@ -1,0 +1,98 @@
+{
+  "comics": [
+    {
+      "id": 1,
+      "title": "Batman: The Long Halloween",
+      "author": "Loeb",
+      "cover": "https://m.media-amazon.com/images/I/5133kCY6caL.jpg",
+      "company": "DC",
+      "description": "A thrilling mystery set during Batman's early years as a crimefighter, where he investigates a series of murders on holidays.",
+      "year": 1996,
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "title": "Spiderman: Entre los muertos",
+      "author": "Millar",
+      "cover": "https://m.media-amazon.com/images/I/513-GlD0oWL.jpg",
+      "company": "Marvel",
+      "description": "Spiderman faces a deadly threat when a powerful villain returns from the dead seeking revenge.",
+      "year": 2000,
+      "price": 12.99
+    },
+    {
+      "id": 3,
+      "title": "Infinity Gauntlet",
+      "author": "Jim Starlin",
+      "cover": "https://i.pinimg.com/originals/0d/68/a1/0d68a1de6caacfcf562161dd58eec3aa.jpg",
+      "company": "Marvel",
+      "description": "Thanos possesses the all-powerful Infinity Gauntlet and wreaks havoc across the universe, challenging the mightiest heroes to stop him.",
+      "year": 1991,
+      "price": 19.99
+    },
+    {
+      "id": 4,
+      "title": "Venom",
+      "author": "Cates",
+      "cover": "https://i.annihil.us/u/prod/marvel/i/mg/8/a0/5aea3123880ca/clean.jpg",
+      "company": "Marvel",
+      "description": "Eddie Brock becomes bonded with an alien symbiote, granting him incredible powers as the anti-hero Venom.",
+      "year": 2018,
+      "price": 9.99
+    },
+    {
+      "id": 5,
+      "title": "Batman 89",
+      "author": "Quinones",
+      "cover": "https://tajmahalcomics.com/wp-content/uploads/2021/09/2021851_xl.jpg",
+      "company": "DC",
+      "description": "A new story set in the world of Tim Burton's Batman film, continuing the Dark Knight's adventures in Gotham City.",
+      "year": 2021,
+      "price": 14.99
+    },
+    {
+      "id": 6,
+      "title": "Superman",
+      "cover": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2016/03/570988-superman-mejores-comics-hombre-acero.jpg?itok=PnfImC_u",
+      "author": "Bill Finger",
+      "company": "DC",
+      "description": "Superman, also known as Clark Kent, is a Kryptonian superhero with incredible powers who fights for truth, justice, and the American way.",
+      "year": 1938,
+      "price": 17.99
+    },
+    {
+      "title": "La muerte del Joker",
+      "cover": "https://www.cinemascomics.com/wp-content/uploads/2017/06/muerte-joker-injustice.jpg",
+      "author": "Jeph Loeb",
+      "company": "DC",
+      "description": "El joker muere",
+      "year": "1987",
+      "price": 11.99,
+      "id": 7
+    },
+    {
+      "title": "El ocaso de los dioses",
+      "cover": "https://www.nerdspan.com/wp-content/uploads/2016/12/JLvsSSQ01_CVR_583e0b44018de5.16130237.jpg",
+      "author": "Francis Baker",
+      "company": "Panini",
+      "description": "La muerte de la liga de la justicia",
+      "year": "1997",
+      "price": 13.99,
+      "id": 8
+    }
+  ],
+  "editoriales": [
+    {
+      "name": "Marvel Comics",
+      "location": "New York, USA"
+    },
+    {
+      "name": "DC Comics",
+      "location": "Burbank, California, USA"
+    },
+    {
+      "name": "Image Comics",
+      "location": "Berkeley, California, USA"
+    }
+  ]
+}

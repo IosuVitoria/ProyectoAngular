@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="cart-container">
+    <div class="cart-icon" (click)="toggleCart()">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+    </div>
+    <div class="cart-items" *ngIf="showCart">
+      <div *ngFor="let item of cartItems">
+        <p>{{ item.title }} - {{ item.quantity }}</p>
+      </div>
+      <div class="cart-total">
+        <p>Total: {{ getTotalPrice() }} €</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="comics-container">
+    <div class="comics">
+      <div class="comic" *ngFor="let comic of comicList">
+        <h4>{{ comic.title }}</h4>
+        <p>{{ comic.company }}</p>
+        <p>{{ comic.price }} €</p>
+        <img src="{{ comic.cover }}" alt="{{ comic.title }}" />
+        <p><a routerLink="/{{ comic.id }}">Ver más</a></p>
+        <div class="quantity-container">
+          <button (click)="addToCart(comic)">+</button>
+          <span>{{ getCartItemQuantity(comic) }}</span>
+          <button (click)="removeFromCart(comic)">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

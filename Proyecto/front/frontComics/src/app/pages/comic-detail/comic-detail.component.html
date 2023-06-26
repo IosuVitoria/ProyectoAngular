@@ -1,0 +1,20 @@
+<div class="comics-container">
+    <div class="comics">
+      <div class="comic">
+        <h4>{{comic.title}}</h4>
+        <p>Editorial responsable: {{comic.company}}</p>
+        <p>Año de publicación: {{comic.year}}</p>
+        <p>Descripción: {{comic.description}}</p>
+        <img src="{{comic.cover}}" alt="{{comic.title}}" />
+        <div class="rating-container">
+            <h4>Califica este comic:</h4>
+            <ngb-rating [(rate)]="rating" [max]="5" [readonly]="false"></ngb-rating>
+            <p>Tu calificación: {{ rating }}</p>
+          </div>
+        <p><a routerLink="/">Volver</a></p>
+      </div>
+    </div>
+  </div>
+  
+
+  

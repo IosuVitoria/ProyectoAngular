@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Marvel', sans-serif;
+}
+  
+.logo {
+    max-width: 50px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+  
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.text {
+    font-family: 'Marvel', sans-serif;
+    color: white;
+    margin: 0;
+}
+  
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+  
+nav a:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+  
+
+  

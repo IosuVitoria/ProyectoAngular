@@ -1,0 +1,48 @@
+<!-- Este form nos permite mediante el formcontrolname unir el dato a lo que queremos recoger. Todo el form es escuchado y al pulsar la función de addComic Inserta
+el documento en la fake API del ejercicio. -->
+<div class="comics-container">
+    <div class="comics">
+      <h3>Insertar un nuevo comic en la colección:</h3>
+  
+      <form [formGroup]="comicForm" (ngSubmit)="addComic()" class="comic-form">
+        <div>
+          <input formControlName="title" placeholder="Inserta el título del comic" type="text" class="comic-input">
+          <p *ngIf="(submitted || comicForm?.get('title')?.hasError('required'))" class="error-message">Este campo es requerido.</p>
+        </div>
+        <div>
+          <input formControlName="author" placeholder="Inserta el nombre del autor" type="text" class="comic-input">
+          <p *ngIf="(submitted || comicForm?.get('author')?.hasError('required'))" class="error-message">Este campo es requerido.</p>
+        </div>
+        <div>
+          <input formControlName="cover" placeholder="Inserta la ubicación de la imagen de portada" type="text" class="comic-input">
+          <p *ngIf="(submitted || comicForm?.get('cover')?.hasError('required'))" class="error-message">Este campo es requerido.</p>
+        </div>
+        <div>
+          <input formControlName="company" placeholder="Inserta la compañía distribuidora" type="text" class="comic-input">
+          <p *ngIf="(submitted || comicForm?.get('company')?.hasError('required'))" class="error-message">Este campo es requerido.</p>
+        </div>
+        <div>
+          <input formControlName="description" placeholder="Inserta la descripción del comic" type="text" class="comic-input">
+        </div>
+        <div>
+          <input formControlName="year" placeholder="Inserta el año de publicación del comic" type="text" class="comic-input">
+          <p *ngIf="(submitted || comicForm?.get('year')?.hasError('required'))" class="error-message">Este campo es requerido.</p>
+          <p *ngIf="(submitted && (comicForm?.get('year')?.hasError('min') || comicForm?.get('year')?.hasError('max')))" class="error-message">El año debe estar entre 1930 y 2100.</p>
+        </div>
+        <button type="submit" class="add-comic-button">Añadir Comic</button>
+      </form>
+
+
+<!-- Este div nos permite poner en funcionamiento una previsualización de cómo se verá el comic en la colección. -->
+
+<div class="comic-preview" *ngIf="comic">
+    <h3>Previsualización de los datos</h3>
+    <h4>{{comic.title}}</h4>
+    <p>Editorial responsable: {{comic.company}}</p>
+    <p>Autor del comic: {{comic.author}}</p>
+    <p>Año publicación del comic: {{comic.year}}</p>
+    <p>Descripción del comic: {{comic.description}}</p>
+    <img src="{{comic.cover}}" alt="{{comic.title}}" class="comic-image" />
+  </div>
+</div>
+</div>
