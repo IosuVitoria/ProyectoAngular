@@ -14,7 +14,8 @@ export class ComicsComponent implements OnInit{
   //Se importa el interface que guía el aspecto que tendrán los datos y cómo se deben tratar.
   comicList!: ComicI[];
   cartItems: { title: string, quantity: number }[] = [];
-  
+  filteredList!: ComicI[];
+
   //Se Se trae el servicio en concreto para ser utilizado.
   constructor(private comicApi: ComicService){}
 
@@ -58,5 +59,12 @@ export class ComicsComponent implements OnInit{
 
   toggleCart() {
     this.showCart = !this.showCart;
+  }
+
+  applyFilter(filterValue: any) {
+    this.filteredList = this.comicList.filter(item => {
+      return (filterValue.brand.length==0 || item.company == filterValue.brand) 
+      && (filterValue.text.length==0 || item.title.toLowerCase().includes(filterValue.text.toLowerCase()) || item.title.toLowerCase().includes(filterValue.text.toLowerCase())) 
+    });
   }
 }
