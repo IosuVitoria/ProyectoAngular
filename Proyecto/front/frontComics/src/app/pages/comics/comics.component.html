@@ -17,7 +17,7 @@
 
   <div class="comics-container">
     <div class="comics">
-      <div class="comic" *ngFor="let comic of filteredList">
+      <div class="comic" *ngFor="let comic of filteredList | paginate: { itemsPerPage: 6, currentPage: page }">
         <h4>{{ comic.title }}</h4>
         <p>{{ comic.company }}</p>
         <p>{{ comic.price }} €</p>
