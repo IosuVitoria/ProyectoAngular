@@ -22,9 +22,11 @@ export class ComicsComponent implements OnInit{
   //Al traer el servicio se puede suscribir la petición a los cambios dentro de la api. Usando this.ComicList además llenamos esta con la información de la API.
   ngOnInit(): void{
     this.comicApi.getComics().subscribe((data: any) => {
-      this.comicList = data;
+      this.comicList = [...data];
+      this.filteredList = [...this.comicList];
     })
   }
+
   addToCart(comic: ComicI) {
     const cartItem = this.cartItems.find(item => item.title === comic.title);
     if (cartItem) {
@@ -64,7 +66,7 @@ export class ComicsComponent implements OnInit{
   applyFilter(filterValue: any) {
     this.filteredList = this.comicList.filter(item => {
       return (filterValue.company.length==0 || item.company == filterValue.company) 
-      && (filterValue.title.length==0 || item.title.toLowerCase().includes(filterValue.title.toLowerCase()) || item.author.toLowerCase().includes(filterValue.author.toLowerCase())) 
+      && (filterValue.text.length==0 || item.title.toLowerCase().includes(filterValue.text.toLowerCase()) || item.author.toLowerCase().includes(filterValue.text.toLowerCase())) 
     });
   }
 }

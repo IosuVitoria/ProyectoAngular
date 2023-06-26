@@ -16,7 +16,7 @@ export class FilterComponent {
 
   companyList: any[] = [];
 
-  constructor (private service:ComicService, private fb: FormBuilder){
+  constructor (private service : ComicService, private fb: FormBuilder){
 
     service.getComics().subscribe((data:any) => {
       this.companyList = [...new Set( data.map((e:any) => e.company))];
@@ -34,4 +34,5 @@ export class FilterComponent {
     this.filterChanged.emit(this.filterForm.value);
   }
 
+ 
 }

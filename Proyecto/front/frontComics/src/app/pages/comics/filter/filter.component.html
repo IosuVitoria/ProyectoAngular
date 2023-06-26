@@ -5,8 +5,9 @@
 
     <div class="form-group">
         <label for="text" class="form-label"> Texto </label>
-        <input type="text" id="text" formControlName="title" class="form-input">
+        <input type="text" id="text" formControlName="text" class="form-input">
       </div>
     <button type="submit" class="form-button"> Buscar </button>
+    <button type="submit" class="form-button" (click)="recargar()"> Borrar filtro </button>
 
 </form>
