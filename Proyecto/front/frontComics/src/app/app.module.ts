@@ -14,7 +14,7 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FilterComponent } from './pages/comics/filter/filter.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,8 @@ import { FilterComponent } from './pages/comics/filter/filter.component';
     NgbRatingModule,
     ReactiveFormsModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

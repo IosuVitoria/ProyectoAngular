@@ -26,7 +26,6 @@ export class FilterComponent {
       company: "",
       text: ""
     });
-
   }
 
   submitForm(){

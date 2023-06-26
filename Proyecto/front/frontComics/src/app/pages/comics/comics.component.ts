@@ -8,9 +8,12 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './comics.component.html',
   styleUrls: ['./comics.component.css']
 })
+
 export class ComicsComponent implements OnInit{
   faShoppingCart = faShoppingCart
   showCart:boolean = false;
+
+  public page!: number;
   //Se importa el interface que guía el aspecto que tendrán los datos y cómo se deben tratar.
   comicList!: ComicI[];
   cartItems: { title: string, quantity: number }[] = [];
