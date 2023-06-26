@@ -17,7 +17,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   opacity: 0.9;
-  background-image: url("../../../assets/");
+  background-image: url("../../../assets/fondoPagina.jfif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,6 +39,8 @@ body {
 
 .form-group {
   margin-bottom: 20px;
+  width: 96%;
+  border-radius: 20px;
 }
 
 .form-label {

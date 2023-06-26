@@ -15,6 +15,7 @@ export class ComicsComponent implements OnInit {
   comicList!: ComicI[];
   cartItems: { title: string; quantity: number }[] = [];
   filteredList!: ComicI[];
+  public page!:number
 
   @ViewChild('filterForm') filterForm!: NgForm;
 

@@ -30,6 +30,9 @@
           <button class="button-modificator" [routerLink]="['/edit', comic.id]">Modificar información</button>
         </div>
       </div>
+      <div class="pagination">
+        <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+      </div>
     </div>
   </div>
 </div>

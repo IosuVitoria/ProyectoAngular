@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 
 .comics {
-  background-image: url("../../../assets/fondoPagina.jfif");
+  background-image: url("../../../assets/fondoPagina3.jpeg");
   font-family: "Marvel", sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
