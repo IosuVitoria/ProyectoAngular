@@ -1,14 +1,14 @@
 {
   "comics": [
     {
-      "id": 1,
-      "title": "Batman: The Long Halloween",
-      "author": "Loeb",
+      "title": "Batman: The Last Halloween",
+      "author": "Jeph Loeb",
       "cover": "https://m.media-amazon.com/images/I/5133kCY6caL.jpg",
       "company": "DC",
       "description": "A thrilling mystery set during Batman's early years as a crimefighter, where he investigates a series of murders on holidays.",
       "year": 1996,
-      "price": 15.99
+      "price": 15.99,
+      "id": 1
     },
     {
       "id": 2,

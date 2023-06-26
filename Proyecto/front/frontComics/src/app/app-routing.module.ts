@@ -11,7 +11,7 @@ const routes: Routes = [
 
   {path: "comic", component: ComicsComponent},
   {path: "add", component: AddComicComponent},
-  {path: "edit", component: ModifyComicComponent},
+  { path: 'edit/:id', component: ModifyComicComponent },
   {path: "comic/:id", component: ComicDetailComponent},
   {path: "home", component: HomeComponent},
   {path: "contact", component: ContactComponent}

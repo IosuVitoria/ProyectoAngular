@@ -27,6 +27,7 @@
           <button (click)="addToCart(comic)">+</button>
           <span>{{ getCartItemQuantity(comic) }}</span>
           <button (click)="removeFromCart(comic)">-</button>
+          <button class="button-modificator" [routerLink]="['/edit', comic.id]">Modificar información</button>
         </div>
       </div>
     </div>

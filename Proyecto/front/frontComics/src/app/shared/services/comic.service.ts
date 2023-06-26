@@ -36,4 +36,5 @@ export class ComicService {
   deleteComic(id: number){
     return this.http.delete(`http://localhost:3000/comics/${id}`);
   }
+  
 }
