@@ -63,8 +63,8 @@ export class ComicsComponent implements OnInit{
 
   applyFilter(filterValue: any) {
     this.filteredList = this.comicList.filter(item => {
-      return (filterValue.brand.length==0 || item.company == filterValue.brand) 
-      && (filterValue.text.length==0 || item.title.toLowerCase().includes(filterValue.text.toLowerCase()) || item.title.toLowerCase().includes(filterValue.text.toLowerCase())) 
+      return (filterValue.company.length==0 || item.company == filterValue.company) 
+      && (filterValue.title.length==0 || item.title.toLowerCase().includes(filterValue.title.toLowerCase()) || item.author.toLowerCase().includes(filterValue.author.toLowerCase())) 
     });
   }
 }

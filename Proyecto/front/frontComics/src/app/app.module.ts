@@ -14,6 +14,7 @@ import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FilterComponent } from './pages/comics/filter/filter.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FilterComponent } from './pages/comics/filter/filter.component';
     NavbarComponent,
     FooterComponent,
     FilterComponent,
+    HomeComponent,
    
   ],
   imports: [
