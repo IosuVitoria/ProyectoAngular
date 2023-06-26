@@ -17,7 +17,7 @@
 
   <div class="comics-container">
     <div class="comics">
-      <div class="comic" *ngFor="let comic of comicList">
+      <div class="comic" *ngFor="let comic of filteredList">
         <h4>{{ comic.title }}</h4>
         <p>{{ comic.company }}</p>
         <p>{{ comic.price }} €</p>
