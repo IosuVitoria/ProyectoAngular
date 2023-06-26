@@ -11,7 +11,8 @@
             <ngb-rating [(rate)]="rating" [max]="5" [readonly]="false"></ngb-rating>
             <p>Tu calificación: {{ rating }}</p>
           </div>
-        <p><a routerLink="/">Volver</a></p>
+        <p><a routerLink="/comic">Volver</a></p>
+        <button (click)="deleteComic(id)">Borrar</button>
       </div>
     </div>
   </div>

@@ -61,16 +61,6 @@
       "price": 17.99
     },
     {
-      "title": "La muerte del Joker",
-      "cover": "https://www.cinemascomics.com/wp-content/uploads/2017/06/muerte-joker-injustice.jpg",
-      "author": "Jeph Loeb",
-      "company": "DC",
-      "description": "El joker muere",
-      "year": "1987",
-      "price": 11.99,
-      "id": 7
-    },
-    {
       "title": "El ocaso de los dioses",
       "cover": "https://www.nerdspan.com/wp-content/uploads/2016/12/JLvsSSQ01_CVR_583e0b44018de5.16130237.jpg",
       "author": "Francis Baker",
@@ -95,7 +85,5 @@
       "location": "Berkeley, California, USA"
     }
   ],
-  "users":[
-
-  ]
+  "users": []
 }

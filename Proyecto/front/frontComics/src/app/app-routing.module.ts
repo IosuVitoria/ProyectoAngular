@@ -5,6 +5,7 @@ import { AddComicComponent } from './pages/add-comic/add-comic.component';
 import { ModifyComicComponent } from './pages/modify-comic/modify-comic.component';
 import { ComicDetailComponent } from './pages/comic-detail/comic-detail.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: "add", component: AddComicComponent},
   {path: "edit", component: ModifyComicComponent},
   {path: "comic/:id", component: ComicDetailComponent},
-  {path: "home", component: HomeComponent}
+  {path: "home", component: HomeComponent},
+  {path: "contact", component: ContactComponent}
 ];
 
 @NgModule({

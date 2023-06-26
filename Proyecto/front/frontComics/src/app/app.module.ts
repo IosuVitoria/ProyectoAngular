@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FilterComponent } from './pages/comics/filter/filter.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     FilterComponent,
     HomeComponent,
+    ContactComponent,
    
   ],
   imports: [

@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    align-items: center;
+    width: 25%;
+    background: linear-gradient(to bottom, rgba(173, 168, 168, 0.8), rgba(143, 143, 235, 0.726));
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-left: 650px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-label {
+    font-family: "Marvel", sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .form-input,
+  select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+  .form-button {
+    font-family: "Marvel", sans-serif;
+    background: linear-gradient(to bottom, #000000, #cccccc);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .form-button:hover {
+    background: linear-gradient(to bottom, #22222281, #dddddde0);
+  }
+  
