@@ -7,10 +7,11 @@ import { ComicDetailComponent } from './pages/comic-detail/comic-detail.componen
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistrationComponent } from './pages/register/register.component';
 
 
 const routes: Routes = [
-
   {path: "comic", component: ComicsComponent},
   {path: "add", component: AddComicComponent},
   { path: 'edit/:id', component: ModifyComicComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   {path: "home", component: HomeComponent},
   {path: "contact", component: ContactComponent},
   {path: "trivial", component: TrivialMarvelComponent},
+  {path: "login", component:LoginComponent},
+  {path: "register", component: RegistrationComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,33 @@
+<div class="container"></div>
+<h1>Registration form</h1>
+<form id="registrationForm" (submit)="onRegistrationFormSubmit($event)">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" [(ngModel)]="userName" required>
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select id="role" name="role" [(ngModel)]="role" required>
+      <option value="" disabled selected>Select a role</option>
+      <option value="admin">Admin</option>
+      <option value="user">User</option>
+      <option value="moderator">Moderator</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  </div>
+  <button type="submit">Register User</button>
+
+  <div id="error" class="alert">{{ errorMessage }}</div>
+  <p><a routerLink="/login">Volver al Login</a></p>
+
+</form>
+
+
+  

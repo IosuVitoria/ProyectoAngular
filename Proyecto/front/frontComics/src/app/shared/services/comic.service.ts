@@ -41,4 +41,7 @@ export class ComicService {
     return this.http.get(" http://localhost:3000/preguntas");
   }
 
+ 
 }
+
+

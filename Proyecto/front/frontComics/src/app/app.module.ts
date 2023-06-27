@@ -20,7 +20,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistrationComponent } from './pages/register/register.component';
+
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { UsersComponent } from './users/users.component';
     ContactComponent,
     TrivialMarvelComponent,
     SliderComponent,
-    UsersComponent
+    LoginComponent,
+    RegistrationComponent
    
   ],
   imports: [
