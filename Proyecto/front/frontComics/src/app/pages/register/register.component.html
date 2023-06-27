@@ -1,4 +1,4 @@
-<div class="container"></div>
+<!-- <div class="container"></div>
 <h1>Registration form</h1>
 <form id="registrationForm" (submit)="onRegistrationFormSubmit($event)">
   <div class="form-group">
@@ -30,4 +30,16 @@
 </form>
 
 
-  
+   -->
+
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <input type="email" placeholder="email" formControlName="email" />
+    <p *ngIf="(submitted && registerForm?.get('email')?.hasError('required'))">Este campo es requerido</p>
+    <p *ngIf="(submitted && registerForm?.get('email')?.hasError('pattern'))">No cumple el formato de email</p>
+    <input type="text" placeholder="password" formControlName="password" />
+    <p *ngIf="(submitted && registerForm?.get('password')?.hasError('required'))">Este campo es requerido</p>
+    <p *ngIf="(submitted && registerForm?.get('password')?.hasError('pattern'))">No cumple el formato de password(1 mayuscula, 1 minuscula, 1 numero y 1 caracter especial)</p>
+    <button>Registrar</button>
+</form>
+   
