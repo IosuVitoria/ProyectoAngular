@@ -37,4 +37,8 @@ export class ComicService {
     return this.http.delete(`http://localhost:3000/comics/${id}`);
   }
   
+  getPreguntas(){
+    return this.http.get(" http://localhost:3000/preguntas");
+  }
+
 }

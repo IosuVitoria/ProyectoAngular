@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComicService } from 'src/app/shared/services/comic.service';
 
 interface Question {
   pregunta: string;
@@ -12,36 +13,32 @@ interface Question {
   templateUrl: './trivial.component.html',
   styleUrls: ['./trivial.component.css']
 })
-export class TrivialMarvelComponent implements OnInit {
+
+export class TrivialMarvelComponent{
   preguntas: Question[] = [];
   puntos: number = 0;
+  cantidad : number = 20; 
+  preguntasAleatorias: Question[] =[];
+  constructor ( private preguntApi: ComicService){}
+
 
   ngOnInit(): void {
-    this.cargarPreguntas();
+    this.preguntApi.getPreguntas().subscribe((data: any) => {
+      this.preguntas = [...data];
+      console.log(this.preguntas);
+    });
   }
-
-  cargarPreguntas(): void {
-    fetch('./preguntas.json')
-      .then(response => response.json())
-      .then(data => {
-        this.preguntas = data.preguntas;
-        this.preguntas = this.seleccionarPreguntasAleatorias(20);
-      })
-      .catch(error => {
-        console.error('Error al cargar las preguntas:', error);
-      });
-  }
-
+ 
   seleccionarPreguntasAleatorias(cantidad: number): Question[] {
     const preguntasAleatorias: Question[] = [];
-    const totalPreguntas = this.preguntas.length;
-
+    console.log("Aquí entro al dar botón")
     for (let i = 0; i < cantidad; i++) {
-      const randomIndex = Math.floor(Math.random() * totalPreguntas);
-      preguntasAleatorias.push(this.preguntas[randomIndex]);
+      const randomIndex = Math.floor(Math.random() * this.preguntas.length);
+      console.log(this.preguntas[randomIndex])
+      this.preguntasAleatorias.push(this.preguntas[randomIndex]);
     }
 
-    return preguntasAleatorias;
+    return this.preguntas;
   }
 
   onOpcionSeleccionada(pregunta: Question, indiceOpcion: number): void {

@@ -19,6 +19,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UsersComponent } from './users/users.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { SliderComponent } from './shared/components/slider/slider.component';
     HomeComponent,
     ContactComponent,
     TrivialMarvelComponent,
-    SliderComponent
+    SliderComponent,
+    UsersComponent
    
   ],
   imports: [
@@ -45,7 +49,8 @@ import { SliderComponent } from './shared/components/slider/slider.component';
     ReactiveFormsModule,
     FormsModule,
     FontAwesomeModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

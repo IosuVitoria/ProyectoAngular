@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 
+
 const routes: Routes = [
 
   {path: "comic", component: ComicsComponent},
@@ -16,7 +17,7 @@ const routes: Routes = [
   {path: "comic/:id", component: ComicDetailComponent},
   {path: "home", component: HomeComponent},
   {path: "contact", component: ContactComponent},
-  {path: "trivial", component: TrivialMarvelComponent}
+  {path: "trivial", component: TrivialMarvelComponent},
 ];
 
 @NgModule({

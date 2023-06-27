@@ -1,0 +1,429 @@
+{
+  "comics": [
+    {
+      "id": 1,
+      "title": "Batman: The Long Halloween",
+      "author": "Jeph Loeb",
+      "cover": "https://m.media-amazon.com/images/I/5133kCY6caL.jpg",
+      "company": "DC",
+      "description": "A thrilling mystery set during Batman's early years as a crimefighter, where he investigates a series of murders on holidays.",
+      "year": 1996,
+      "price": 15.99
+    },
+    {
+      "id": 2,
+      "title": "Spiderman: Entre los muertos",
+      "author": "Millar",
+      "cover": "https://m.media-amazon.com/images/I/513-GlD0oWL.jpg",
+      "company": "Marvel",
+      "description": "Spiderman faces a deadly threat when a powerful villain returns from the dead seeking revenge.",
+      "year": 2000,
+      "price": 12.99
+    },
+    {
+      "id": 3,
+      "title": "Infinity Gauntlet",
+      "author": "Jim Starlin",
+      "cover": "https://i.pinimg.com/originals/0d/68/a1/0d68a1de6caacfcf562161dd58eec3aa.jpg",
+      "company": "Marvel",
+      "description": "Thanos possesses the all-powerful Infinity Gauntlet and wreaks havoc across the universe, challenging the mightiest heroes to stop him.",
+      "year": 1991,
+      "price": 19.99
+    },
+    {
+      "id": 4,
+      "title": "Venom",
+      "author": "Cates",
+      "cover": "https://i.annihil.us/u/prod/marvel/i/mg/8/a0/5aea3123880ca/clean.jpg",
+      "company": "Marvel",
+      "description": "Eddie Brock becomes bonded with an alien symbiote, granting him incredible powers as the anti-hero Venom.",
+      "year": 2018,
+      "price": 9.99
+    },
+    {
+      "id": 5,
+      "title": "Batman 89",
+      "author": "Quinones",
+      "cover": "https://tajmahalcomics.com/wp-content/uploads/2021/09/2021851_xl.jpg",
+      "company": "DC",
+      "description": "A new story set in the world of Tim Burton's Batman film, continuing the Dark Knight's adventures in Gotham City.",
+      "year": 2021,
+      "price": 14.99
+    },
+    {
+      "id": 6,
+      "title": "Superman",
+      "cover": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2016/03/570988-superman-mejores-comics-hombre-acero.jpg?itok=PnfImC_u",
+      "author": "Bill Finger",
+      "company": "DC",
+      "description": "Superman, also known as Clark Kent, is a Kryptonian superhero with incredible powers who fights for truth, justice, and the American way.",
+      "year": 1938,
+      "price": 17.99
+    },
+    {
+      "title": "La muerte del Joker",
+      "cover": "https://www.cinemascomics.com/wp-content/uploads/2017/06/muerte-joker-injustice.jpg",
+      "author": "Jeph Loeb",
+      "company": "DC",
+      "description": "El joker muere",
+      "year": "1987",
+      "price": 11.99,
+      "id": 7
+    },
+    {
+      "title": "El ocaso de los dioses",
+      "cover": "https://www.nerdspan.com/wp-content/uploads/2016/12/JLvsSSQ01_CVR_583e0b44018de5.16130237.jpg",
+      "author": "Francis Baker",
+      "company": "Panini",
+      "description": "La muerte de la liga de la justicia",
+      "year": "1997",
+      "price": 13.99,
+      "id": 8
+    },
+    {
+      "title": "Spiderman: Universo Spiderman",
+      "author": "Dan Slott, Olivier Coipel",
+      "cover": "https://m.media-amazon.com/images/I/81RwspgAKSL._AC_UF1000,1000_QL80_.jpg",
+      "company": "Marvel Comics",
+      "description": "¡La saga que reúne a todos los Hombres Araña y Mujeres Araña que han existido jamás! Dan Slott (El Asombroso Spiderman) y Olivier Coipel (Dinastía de M) se unen para ofrecerte el mayor evento en la historia de Spiderman. Más peligroso que nunca, Morlun amenaza a todos los Hombres Araña que existen en el Multiverso, pero esta vez no está solo: tiene a la familia a su lado. ¡Todos los Spiderman que han existido están en peligro!",
+      "year": "2022",
+      "price": 17.1,
+      "id": 9
+    },
+    {
+      "title": "La última cacería de Kraven",
+      "author": "Mike Zeck, J. M. DeMatteis",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7YohKllDLE0F1-3J-dz3Ft1AYyJ9ubgG6maZ6CyAscx8BKXsEmLFWeS_KMEjuGv8XWM&usqp=CAU",
+      "company": "Marvel Comics",
+      "description": "El legendario equipo creativo compuesto por J. M. DeMatteis y Mike Zeck elaboran la historia definitiva de venganza, en esta revolucionaria e inigualable saga, considerada la mejor aventura moderna de Spiderman. Kraven El Cazador ha acechado y acabado con la vida de todos los animales conocidos por el hombre. Pero hay una bestia que se le resiste, una que se burló de él en cada encuentro: el superhéroe conocido como Spiderman. Ahora el tiempo de jugar ha terminado. Acabará con la araña, la enterrará y se convertirá en ella. Empieza la Última Cacería de Kraven.",
+      "year": "2021",
+      "price": 14.75,
+      "id": 10
+    },
+    {
+      "title": "Las Cinco Pesadillas",
+      "author": "Matt Fraction, Salvador Larroca",
+      "cover": "https://m.media-amazon.com/images/I/91in7Y5cNFL._AC_UF1000,1000_QL80_.jpg",
+      "company": "Marvel Comics",
+      "description": "Tony Stark… Iron Man, multimillonario, inventor, empresario y Director de SHIELD. Ahora, afrontará el mayor desafío de su vida. Su nombre es Ezekiel Stane, y es hijo de un viejo enemigo que tuviera Tony: Obadiah Stane, el único hombre capaz de arrebatarle cuanto amaba y arrojarlo al barro. Ezekiel tiene buenos motivos para odiar al Hombre de Hierro. Toda su determinación, toda su fortuna y la tecnología de la armadura de Iron Man han sido puestas al servicio de un único fin: acabar con Tony Stark de una vez por todas. ¡Matt Fraction y Salvador Larroca inician una etapa dorada para Iron Man!",
+      "year": "2023",
+      "price": 19,
+      "id": 11
+    },
+    {
+      "title": "Los Nuevos Vengadores 11",
+      "author": "Billy Tan, Jim Cheung, Chris Bachalo, Brian Michael Bendis",
+      "cover": "https://m.media-amazon.com/images/I/51L-3wyWU2L._SX331_BO1,204,203,200_.jpg",
+      "company": "Marvel Comics",
+      "description": "Un tomo ligado a “Reinado Oscuro”. ¿Quién es el nuevo Hechicero Supremo? El Doctor Extraño ya no ostenta el título de Maestro de las Artes Místicas. Ahora, otros personajes de poder equiparable se presentan candidatos para heredarlo. Stephen Extraño acude a Nueva York para pedir ayuda a Los Nuevos Vengadores, y es entonces cuando estalla la batalla mágica. Además, ¿podrán Los Héroes Más Poderosos de la Tierra confiar en un Spiderman que no se atreve a enseñar su verdadero rostro?",
+      "year": "2023",
+      "price": 18,
+      "id": 12
+    }
+  ],
+  "editoriales": [
+    {
+      "name": "Marvel Comics",
+      "location": "New York, USA"
+    },
+    {
+      "name": "DC Comics",
+      "location": "Burbank, California, USA"
+    },
+    {
+      "name": "Image Comics",
+      "location": "Berkeley, California, USA"
+    }
+  ],
+  "users": [
+    { "id": 1, "username": "user1", "password": "password1" },
+    { "id": 2, "username": "user2", "password": "password2" },
+    { "id": 3, "username": "user3", "password": "password3" }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿En qué año se publicó por primera vez el cómic de Spider-Man?",
+      "opciones": ["1962", "1975", "1980", "1991"],
+      "respuesta_correcta": "1962"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Dios del Trueno?",
+      "opciones": ["Iron Man", "Thor", "Hulk", "Spider-Man"],
+      "respuesta_correcta": "Thor"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Caballero Oscuro?",
+      "opciones": ["Superman", "Wonder Woman", "Flash", "Batman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Qué superhéroe de Marvel tiene un martillo mágico llamado Mjolnir?",
+      "opciones": ["Iron Man", "Captain America", "Hulk", "Thor"],
+      "respuesta_correcta": "Thor"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene el poder de la velocidad sobrehumana?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Flash"],
+      "respuesta_correcta": "Flash"
+    },
+    {
+      "pregunta": "¿Quién es el archienemigo de Spider-Man?",
+      "opciones": ["Venom", "Green Goblin", "Doctor Octopus", "Loki"],
+      "respuesta_correcta": "Green Goblin"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un mutante con garras retráctiles?",
+      "opciones": ["Iron Man", "Captain America", "Wolverine", "Black Widow"],
+      "respuesta_correcta": "Wolverine"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es un príncipe amazónico?",
+      "opciones": ["Aquaman", "Green Arrow", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Wonder Woman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Cabeza de Martillo?",
+      "opciones": ["Iron Man", "Captain America", "Thor", "Hulk"],
+      "respuesta_correcta": "Hulk"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Rey de los Mares?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Superman"],
+      "respuesta_correcta": "Aquaman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un experto en artes marciales y director de S.H.I.E.L.D.?",
+      "opciones": ["Captain America", "Black Widow", "Iron Man", "Hawkeye"],
+      "respuesta_correcta": "Captain America"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la habilidad de crear construcciones de energía con su anillo de poder?",
+      "opciones": ["Green Lantern", "Batman", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Green Lantern"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel obtiene sus poderes a través de la radiación gamma?",
+      "opciones": ["Captain America", "Black Widow", "Iron Man", "Hulk"],
+      "respuesta_correcta": "Hulk"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Hombre de Acero?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Superman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene una armadura tecnológica de alta tecnología?",
+      "opciones": ["Captain America", "Iron Man", "Spider-Man", "Black Widow"],
+      "respuesta_correcta": "Iron Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Velocista Escarlata?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Flash"],
+      "respuesta_correcta": "Flash"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un científico que se convierte en una criatura verde y poderosa?",
+      "opciones": ["Captain America", "Black Widow", "Hulk", "Hawkeye"],
+      "respuesta_correcta": "Hulk"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Rey de la Atlántida?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Superman"],
+      "respuesta_correcta": "Aquaman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene la capacidad de trepar paredes y un sentido arácnido?",
+      "opciones": ["Iron Man", "Captain America", "Spider-Man", "Black Widow"],
+      "respuesta_correcta": "Spider-Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Caballero de la Noche?",
+      "opciones": ["Superman", "Wonder Woman", "Flash", "Batman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Hombre Araña?",
+      "opciones": ["Iron Man", "Captain America", "Spider-Man", "Hawkeye"],
+      "respuesta_correcta": "Spider-Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una tiara mágica y brazaletes indestructibles?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Wonder Woman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un experto en arquería?",
+      "opciones": ["Iron Man", "Captain America", "Hulk", "Hawkeye"],
+      "respuesta_correcta": "Hawkeye"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la capacidad de comunicarse y controlar a los peces?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Superman"],
+      "respuesta_correcta": "Aquaman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un exsoldado mejorado con un suero experimental?",
+      "opciones": ["Captain America", "Black Widow", "Iron Man", "Hulk"],
+      "respuesta_correcta": "Captain America"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Defensor de Ciudad Gótica?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Batman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene un traje con una telaraña en el pecho?",
+      "opciones": ["Iron Man", "Captain America", "Spider-Man", "Black Widow"],
+      "respuesta_correcta": "Spider-Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como la Princesa de Themyscira?",
+      "opciones": ["Aquaman", "Green Arrow", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Wonder Woman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un científico que se convierte en un monstruo verde cuando se enfada?",
+      "opciones": ["Iron Man", "Captain America", "Hulk", "Hawkeye"],
+      "respuesta_correcta": "Hulk"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Hombre Murciélago?",
+      "opciones": ["Superman", "Wonder Woman", "Flash", "Batman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene un escudo indestructible?",
+      "opciones": ["Iron Man", "Captain America", "Hulk", "Black Widow"],
+      "respuesta_correcta": "Captain America"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una habilidad sobrehumana para correr a velocidades extremas?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Flash"],
+      "respuesta_correcta": "Flash"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un espía altamente entrenado?",
+      "opciones": ["Iron Man", "Captain America", "Black Widow", "Hawkeye"],
+      "respuesta_correcta": "Black Widow"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Hombre de Acero?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Superman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene un traje blindado de alta tecnología?",
+      "opciones": ["Captain America", "Iron Man", "Spider-Man", "Hulk"],
+      "respuesta_correcta": "Iron Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una identidad secreta como Bruce Wayne?",
+      "opciones": ["Aquaman", "Green Arrow", "Wonder Woman", "Batman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Vengador Asgardiano?",
+      "opciones": ["Iron Man", "Captain America", "Thor", "Hulk"],
+      "respuesta_correcta": "Thor"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la capacidad de volar y disparar rayos de calor desde sus ojos?",
+      "opciones": ["Aquaman", "Green Lantern", "Superman", "Flash"],
+      "respuesta_correcta": "Superman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un experto en arquería y utiliza flechas especiales?",
+      "opciones": ["Captain America", "Black Widow", "Hawkeye", "Iron Man"],
+      "respuesta_correcta": "Hawkeye"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una armadura y tecnología avanzada?",
+      "opciones": ["Green Arrow", "Batman", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un experto en artes marciales y fue entrenado por una organización secreta?",
+      "opciones": ["Captain America", "Black Widow", "Iron Man", "Hawkeye"],
+      "respuesta_correcta": "Black Widow"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la capacidad de comunicarse y controlar a los animales marinos?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Superman"],
+      "respuesta_correcta": "Aquaman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Hombre sin Miedo?",
+      "opciones": ["Captain America", "Black Widow", "Iron Man", "Daredevil"],
+      "respuesta_correcta": "Daredevil"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Detective del Enmascarado?",
+      "opciones": ["Green Arrow", "Batman", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Hombre Hormiga?",
+      "opciones": ["Iron Man", "Ant-Man", "Spider-Man", "Black Widow"],
+      "respuesta_correcta": "Ant-Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una identidad secreta como Oliver Queen?",
+      "opciones": ["Aquaman", "Green Arrow", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Green Arrow"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Señor de los Mares?",
+      "opciones": ["Iron Man", "Namor", "Hulk", "Thor"],
+      "respuesta_correcta": "Namor"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la capacidad de generar y controlar la luz verde con su anillo de poder?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Green Lantern"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene una fuerza sobrehumana y es conocido como el Goliat Verde?",
+      "opciones": ["Captain America", "Black Widow", "Hulk", "Hawkeye"],
+      "respuesta_correcta": "Hulk"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene una armadura y tecnología avanzada?",
+      "opciones": ["Green Arrow", "Batman", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Batman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es un científico con una inteligencia sobrehumana?",
+      "opciones": ["Iron Man", "Captain America", "Spider-Man", "Black Widow"],
+      "respuesta_correcta": "Spider-Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Último Hijo de Krypton?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Superman"],
+      "respuesta_correcta": "Superman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene una armadura tecnológica y es conocido como el Hombre de Hierro?",
+      "opciones": ["Captain America", "Iron Man", "Thor", "Hulk"],
+      "respuesta_correcta": "Iron Man"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC tiene la capacidad de correr a velocidades increíbles?",
+      "opciones": ["Aquaman", "Green Lantern", "Wonder Woman", "Flash"],
+      "respuesta_correcta": "Flash"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel es conocido como el Espía Maestro?",
+      "opciones": ["Iron Man", "Captain America", "Black Widow", "Hawkeye"],
+      "respuesta_correcta": "Black Widow"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de DC es conocido como el Rey de los Siete Mares?",
+      "opciones": ["Aquaman", "Green Arrow", "Flash", "Superman"],
+      "respuesta_correcta": "Aquaman"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes de Marvel tiene un traje rojo y amarillo, y es conocido como el Hombre Hormiga?",
+      "opciones": ["Iron Man", "Ant-Man", "Spider-Man", "Hulk"],
+      "respuesta_correcta": "Ant-Man"
+    }]
+}

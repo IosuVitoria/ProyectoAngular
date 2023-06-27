@@ -1,6 +1,7 @@
 <h2>Trivial de Marvel</h2>
-
-<div *ngFor="let pregunta of preguntas; let i = index">
+<button (click)="seleccionarPreguntasAleatorias(cantidad)">Generar Test</button>
+<div *ngFor="let pregunta of preguntasAleatorias; let i = index">
+  
   <h3>{{ pregunta.pregunta }}</h3>
   <ul>
     <li *ngFor="let opcion of pregunta.opciones; let j = index"
