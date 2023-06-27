@@ -17,6 +17,7 @@ import { FilterComponent } from './pages/comics/filter/filter.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FilterComponent,
     HomeComponent,
     ContactComponent,
+    TrivialMarvelComponent
    
   ],
   imports: [

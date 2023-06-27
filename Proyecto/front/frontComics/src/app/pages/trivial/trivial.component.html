@@ -1,0 +1,18 @@
+<h2>Trivial de Marvel</h2>
+
+<div *ngFor="let pregunta of preguntas; let i = index">
+  <h3>{{ pregunta.pregunta }}</h3>
+  <ul>
+    <li *ngFor="let opcion of pregunta.opciones; let j = index"
+        [ngClass]="{
+          'correct-option': pregunta.selectedOptionIndex === j && opcion === pregunta.respuesta_correcta,
+          'incorrect-option': pregunta.selectedOptionIndex === j && opcion !== pregunta.respuesta_correcta
+        }"
+        (click)="onOpcionSeleccionada(pregunta, j)">
+      {{ opcion }}
+    </li>
+  </ul>
+</div>
+
+<p>Puntos: {{ puntos }}</p>
+<p>{{ calcularPuntaje() }}</p>

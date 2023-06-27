@@ -6,6 +6,7 @@ import { ModifyComicComponent } from './pages/modify-comic/modify-comic.componen
 import { ComicDetailComponent } from './pages/comic-detail/comic-detail.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 
 const routes: Routes = [
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'edit/:id', component: ModifyComicComponent },
   {path: "comic/:id", component: ComicDetailComponent},
   {path: "home", component: HomeComponent},
-  {path: "contact", component: ContactComponent}
+  {path: "contact", component: ContactComponent},
+  {path: "trivial", component: TrivialMarvelComponent}
 ];
 
 @NgModule({
