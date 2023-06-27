@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+*{background:white;
+    border-radius: 7px;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid crimson 2px;
+    
+}
+.papa{
+   
+ margin-left: 2%;
+background:url(../../../../assets/bg.2.jpg);
+width: 95%;
+height: 90vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+border: solid 4px rgb(214, 0, 0);
+
+
+}
+
+
+
+ .slider{
+    
+    width: 70vw;
+    height: 595px;
+    overflow: hidden;
+} 
+
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 25s slide infinite;
+}
+
+
+
+.slide {
+    float: left;
+    position: relative;
+    width: 70vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+
+}
+
+ .slide img {
+    object-fit: cover;
+   padding-top: 40px;
+    width: 64vw;
+    height: 500px;
+}
+
+
+
+
+
+
+@keyframes slide{
+    0%{left:0}
+    20%{left:0}
+    25%{left:-100%} 
+    45%{left:-100%}
+    50%{left:-200%}
+    70%{left:-200%}
+    75%{left: -300%}
+    95%{left: -300%}
+
+    100%{left:0%}
+} 

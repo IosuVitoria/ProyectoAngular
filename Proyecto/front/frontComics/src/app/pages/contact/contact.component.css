@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+
+.divNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center
+}
+
+.navLanguage {
+        border: 1.5px solid;
+        border-color: black;
+        background-color: rgb(180, 180, 180);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 40vw;
+        margin:20px 30px 20px 30px;
+        border-radius: 15px;
+}
+.ulLanguage{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+        justify-content: center;
+        margin: 20px 0px;
+        padding: 0px;
+    }
+.liLanguage{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 4vw;
+        width: 6vw;
+        list-style: none;
+        margin: 0px 30px;
+        justify-content: center;
+}
+
+.flags{
+    border: 1px solid transparent;
+    border-radius: 15px;
+    pointer-events: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    
+    }
+
+    .flags:hover{
+    border: 2px solid transparent;
+    border-radius: 15px;
+    scale: 1.25;}
+
+
+.contact-element-ES{
+    font-family: 'Marvel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.contact-element-EN{
+    font-family: 'Marvel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.contact-element-DE{
+    font-family: 'Marvel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    line-height: 30px;
+    border: solid black 1.5px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 40vw;
+    background-color:  rgb(180, 180, 180);;
+    .buttonClass{
+        margin-top: 20px;
+    }
+}
