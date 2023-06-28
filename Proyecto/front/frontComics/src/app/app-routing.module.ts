@@ -10,11 +10,13 @@ import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistrationComponent } from './pages/register/register.component';
 
+//1º Tras la creación de los archivos se debe proceder a la creación de las rutas.
 
 const routes: Routes = [
+  {path:"", component:HomeComponent},
   {path: "comic", component: ComicsComponent},
   {path: "add", component: AddComicComponent},
-  { path: 'edit/:id', component: ModifyComicComponent },
+  {path: 'edit/:id', component: ModifyComicComponent },
   {path: "comic/:id", component: ComicDetailComponent},
   {path: "home", component: HomeComponent},
   {path: "contact", component: ContactComponent},

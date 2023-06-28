@@ -1,79 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
-*{background:white;
-    border-radius: 7px;
-    margin: 0;
-    padding: 0;
-    border-bottom: solid crimson 2px;
-    
-}
-.papa{
-   
- margin-left: 2%;
-background:url(../../../../assets/bg.2.jpg);
-width: 95%;
-height: 90vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-border: solid 4px rgb(214, 0, 0);
+@import url("https://fonts.googleapis.com/css2?family=Marvel&display=swap");
 
-
+.papa {
+  background: url("../../../../assets/bg.2.jpg");
+  width: 94vw;
+  height: 80vh;
+  margin: 0 3vw;
+  display: flex;
+  align-items: center;
 }
 
-
-
- .slider{
-    
-    width: 70vw;
-    height: 595px;
-    overflow: hidden;
-} 
-
-
-figure{
-    position: relative;
-    left: 0;
-    width: 400%;
-    animation: 25s slide infinite;
+.slider {
+  display: flex;
+  overflow: hidden;
 }
-
-
 
 .slide {
-    float: left;
-    position: relative;
-    width: 70vw;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-   
-
+  flex: 1 0 100%;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  animation: 14s slide infinite;
 }
 
- .slide img {
-    object-fit: cover;
-   padding-top: 40px;
-    width: 64vw;
-    height: 500px;
+.slide img {
+  width: 70vw;
+  height: 70vh;
+  margin: 0 7vw;
+  border: solid 20px rgb(34, 34, 34);
+  border-radius: 2rem;
+  box-shadow: 0rem 1rem 2rem -0.4rem hsl(0, 0%, 0%);
 }
 
-
-
-
-
-
-@keyframes slide{
-    0%{left:0}
-    20%{left:0}
-    25%{left:-100%} 
-    45%{left:-100%}
-    50%{left:-200%}
-    70%{left:-200%}
-    75%{left: -300%}
-    95%{left: -300%}
-
-    100%{left:0%}
-} 
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: 0%;
+  }
+}

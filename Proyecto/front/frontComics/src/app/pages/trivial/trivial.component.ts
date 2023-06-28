@@ -32,7 +32,7 @@ export class TrivialMarvelComponent{
   seleccionarPreguntasAleatorias(cantidad: number): Question[] {
     const preguntasAleatorias: Question[] = [];
     console.log("Aquí entro al dar botón")
-    for (let i = 0; i < cantidad; i++) {
+    for (let i = 0; i <= cantidad; i++) {
       const randomIndex = Math.floor(Math.random() * this.preguntas.length);
       console.log(this.preguntas[randomIndex])
       this.preguntasAleatorias.push(this.preguntas[randomIndex]);

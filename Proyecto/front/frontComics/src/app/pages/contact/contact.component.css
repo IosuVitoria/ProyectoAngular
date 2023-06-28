@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 
-
+.backContact{
+    background-image: url("https://media.discordapp.net/attachments/1105133232053297302/1123234766448234608/bg.1.jpg?width=765&height=510");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+}
 .divNav{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 18px;
 }
 
 .navLanguage {
@@ -61,6 +70,8 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
+    font-weight: bold;
+    color: white;
 }
 .contact-element-EN{
     font-family: 'Marvel', sans-serif;
@@ -68,6 +79,8 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
+    font-weight: bold;
+    color: white;
 }
 .contact-element-DE{
     font-family: 'Marvel', sans-serif;
@@ -75,6 +88,8 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
+    font-weight: bold;
+    color: white;
 }
 .contactForm{
     display: flex;
@@ -85,7 +100,9 @@
     border-radius: 15px;
     padding: 10px;
     width: 40vw;
-    background-color:  rgb(180, 180, 180);;
+    background-color:  rgb(180, 180, 180);
+    font-weight: bold;
+    color: black;
     .buttonClass{
         margin-top: 20px;
     }

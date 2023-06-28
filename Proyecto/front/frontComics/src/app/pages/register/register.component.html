@@ -33,7 +33,7 @@
    -->
 
 
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <input type="email" placeholder="email" formControlName="email" />
     <p *ngIf="(submitted && registerForm?.get('email')?.hasError('required'))">Este campo es requerido</p>
     <p *ngIf="(submitted && registerForm?.get('email')?.hasError('pattern'))">No cumple el formato de email</p>
@@ -42,4 +42,39 @@
     <p *ngIf="(submitted && registerForm?.get('password')?.hasError('pattern'))">No cumple el formato de password(1 mayuscula, 1 minuscula, 1 numero y 1 caracter especial)</p>
     <button>Registrar</button>
 </form>
-   
+    -->
+
+
+    <div class="registercontainer">
+      <div class="registerbox">
+      <h1 class="register-h">Registration form</h1>
+      <form id="registrationForm" (submit)="onRegistrationFormSubmit($event)">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" [(ngModel)]="userName" required>
+        </div>
+        <div class="form-group">
+          <label for="role">Role</label>
+          <select id="role" name="role" [(ngModel)]="role" required>
+            <option value="" disabled selected>Select a role</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            <option value="moderator">Moderator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required>
+        </div>
+        <button type="submit" class="buttonRegister">Register User</button>
+      
+        <div id="error" class="alert">{{ errorMessage }}</div>
+        <p><a routerLink="/login">Volver al Login</a></p>
+      
+      </form>
+      </div>
+      </div>

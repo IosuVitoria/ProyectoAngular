@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ComicI } from 'src/interfaces/model';
+import { ComicI, UserI } from 'src/interfaces/model';
 
 @Injectable({
   providedIn: 'root'
@@ -40,7 +40,10 @@ export class ComicService {
   getPreguntas(){
     return this.http.get(" http://localhost:3000/preguntas");
   }
-
+  
+  register(user: UserI){
+    return this.http.post('http://localhost:5000/users/register', user)
+  }
  
 }
 
