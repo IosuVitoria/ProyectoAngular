@@ -1,0 +1,42 @@
+
+
+.logincontainer{
+background: url("https://cdn.discordapp.com/attachments/1105133232053297302/1123312377811710033/komar-fototapeten-marvel.jpg");
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 600px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 20px;
+}
+
+.loginbox{
+background-color: white;
+border-radius: 20px;
+height: 250px;
+width: 200px;
+
+}
+
+.form-group{
+padding: 5px;
+}
+
+.login-h{
+margin-top: 10px;
+}
+
+.buttonLogin{
+    background-image: linear-gradient(to right, #007bff, #ff0000);
+    padding: 5px;
+    font-weight: bold;
+    margin: 3px;
+    color: blanchedalmond;
+    border: none;
+    opacity: 0.9;
+    border-radius: 5px;
+}

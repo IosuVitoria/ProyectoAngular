@@ -1,0 +1,14 @@
+app-slider{
+    margin-top: 10px;
+}
+
+audio::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  audio {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }

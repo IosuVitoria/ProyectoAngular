@@ -12,22 +12,26 @@
       </div>
     </div>
   </div>
-  
-<app-filter (filterChanged)="applyFilter($event)"></app-filter>
+
+  <app-filter class="filter" (filterChanged)="applyFilter($event)"></app-filter>
 
   <div class="comics-container">
     <div class="comics">
-      <div class="comic" *ngFor="let comic of comicList">
+      <div class="comic" *ngFor="let comic of filteredList | paginate: { itemsPerPage: 6, currentPage: page }">
         <h4>{{ comic.title }}</h4>
         <p>{{ comic.company }}</p>
         <p>{{ comic.price }} €</p>
         <img src="{{ comic.cover }}" alt="{{ comic.title }}" />
-        <p><a routerLink="/{{ comic.id }}">Ver más</a></p>
+        <p><a [routerLink]="['/comic', comic.id]">Ver más</a></p>
         <div class="quantity-container">
           <button (click)="addToCart(comic)">+</button>
           <span>{{ getCartItemQuantity(comic) }}</span>
           <button (click)="removeFromCart(comic)">-</button>
+          <button class="button-modificator" [routerLink]="['/edit', comic.id]">Modificar información</button>
         </div>
+      </div>
+      <div class="pagination">
+        <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
       </div>
     </div>
   </div>

@@ -15,6 +15,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FilterComponent } from './pages/comics/filter/filter.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { TrivialMarvelComponent } from './pages/trivial/trivial.component';
+import { SliderComponent } from './shared/components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistrationComponent } from './pages/register/register.component';
+
 
 
 @NgModule({
@@ -28,6 +36,11 @@ import { HomeComponent } from './pages/home/home.component';
     FooterComponent,
     FilterComponent,
     HomeComponent,
+    ContactComponent,
+    TrivialMarvelComponent,
+    SliderComponent,
+    LoginComponent,
+    RegistrationComponent
    
   ],
   imports: [
@@ -38,7 +51,9 @@ import { HomeComponent } from './pages/home/home.component';
     NgbRatingModule,
     ReactiveFormsModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgxPaginationModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

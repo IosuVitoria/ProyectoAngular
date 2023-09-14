@@ -1,1 +1,45 @@
-<p>modify-comic works!</p>
+<div class="decorador">
+  <h2 class="form-title">Modificar Comic</h2>
+
+  <div class="form-container">
+    <form [formGroup]="modifiedComicForm" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="title" class="form-label">Título del comic:</label>
+        <input type="text" id="title" formControlName="title" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="author" class="form-label">Nombre del autor:</label>
+        <input type="text" id="author" formControlName="author" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="cover" class="form-label">Url de la imagen:</label>
+        <input type="text" id="cover" formControlName="cover" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="company" class="form-label">Editorial:</label>
+        <input type="text" id="company" formControlName="company" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">Argumento del comic:</label>
+        <input type="text" id="description" formControlName="description" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="year" class="form-label">Año de la publicación:</label>
+        <input type="number" id="year" formControlName="year" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="price" class="form-label">Precio del comic:</label>
+        <input type="number" id="price" formControlName="price" class="form-input" />
+      </div>
+
+      <button type="submit" class="form-button">Guardar cambios</button>
+    </form>
+    <button class="form-button volver-button" routerLink="/comic">Volver</button>
+  </div>
+</div>

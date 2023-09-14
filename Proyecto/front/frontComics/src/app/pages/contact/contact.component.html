@@ -1,0 +1,93 @@
+<div class="backContact">
+  <div class="divNav">
+  <nav class="navLanguage">
+      <ul class="ulLanguage">
+        <li class="liLanguage" (click)="showContactElement('spain')"><img class="flags" src="../../../assets/es-flag.svg" alt="Spain"></li>
+        <li class="liLanguage" (click)="showContactElement('united-kingdom')"><img class="flags" src="../../../assets/gb-flag.svg" alt="United Kingdom"></li>
+        <li class="liLanguage" (click)="showContactElement('germany')"><img class="flags" src="../../../assets/de-flag.svg" alt="Germany"></li>
+      </ul>
+    </nav>
+  </div>  
+  <div *ngIf="showFlag === 'spain'"class="contact-element-ES">
+      <h2>Contacto</h2>
+      <p>Para consultas relacionadas con el servicio técnico, contáctenos a través de los siguientes medios</p>
+    
+      <div class="contact-info">
+        <p><strong>Teléfono:</strong> + 34 645 872 515 </p>
+        <p><strong>Correo electrónico:</strong> support-shop-es@gmail.com</p>
+        <p><strong>Horario de atención:</strong> Lunes a viernes, de 9:00 a.m. a 5:00 p.m.</p>
+        
+      </div>
+    
+      <h3>Envíe un correo electrónico</h3>
+    
+      <form id="contactForm" class=contactForm action="mailto:support_shop_es@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+    
+        <button type="submit" class="buttonClass">Enviar</button>
+      </form>
+    </div>
+  
+    <div *ngIf="showFlag === 'united-kingdom'" class="contact-element-EN">
+     
+      <h2>Contact</h2>
+      <p>For technical support inquiries, please contact us using the following methods</p>
+  
+      <div class="contact-info">
+          <p><strong>Phone:</strong> +44 345 872515</p>
+          <p><strong>Email:</strong> support-shop-en@gmail.com</p>
+          <p><strong>Business Hours:</strong> Monday to Friday, 9:00 a.m. to 5:00 p.m.</p>
+         
+        </div>
+        
+        <h3>Send an Email</h3>
+        
+        <form id="contactForm" class=contactForm action="mailto:support_shop_en@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        
+          <button type="submit" class="buttonClass">Send</button>
+        </form>
+      </div>
+  
+      <div *ngIf="showFlag === 'germany'" class="contact-element-DE">
+        
+          <h2>Kontakt</h2>
+          <p>Für technischen Support-Anfragen kontaktieren Sie uns bitte auf folgenden Wegen</p>
+  
+          <div class="contact-info">
+              <p><strong>Telefon:</strong> +49 159 654712</p>
+              <p><strong>E-Mail:</strong> support-shop-de@gmail.com</p>
+              <p><strong>Geschäftszeiten:</strong> Montag bis Freitag, 9:00 bis 17:00 Uhr</p>
+              
+            </div>
+            
+            <h3>Schreiben Sie eine E-Mail</h3>
+            
+            <form id="contactForm" class=contactForm action="mailto:support_shop@gmail.com" method="post" enctype="text/plain">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            
+              <label for="email">E-Mail:</label>
+              <input type="email" id="email" name="email" required>
+            
+              <label for="message">Nachricht:</label>
+              <textarea id="message" name="message" required></textarea>
+            
+              <button type="submit" class="buttonClass">Senden</button>
+            </form>
+      </div>
+    </div>

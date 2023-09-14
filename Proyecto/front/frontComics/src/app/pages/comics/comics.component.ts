@@ -1,30 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ComicService } from 'src/app/shared/services/comic.service';
 import { ComicI } from 'src/interfaces/model';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-comics',
   templateUrl: './comics.component.html',
   styleUrls: ['./comics.component.css']
 })
-export class ComicsComponent implements OnInit{
-  faShoppingCart = faShoppingCart
-  showCart:boolean = false;
-  //Se importa el interface que guía el aspecto que tendrán los datos y cómo se deben tratar.
+export class ComicsComponent implements OnInit {
+  faShoppingCart = faShoppingCart;
+  showCart: boolean = false;
   comicList!: ComicI[];
-  cartItems: { title: string, quantity: number }[] = [];
+  cartItems: { title: string; quantity: number }[] = [];
   filteredList!: ComicI[];
+  public page!:number
 
-  //Se Se trae el servicio en concreto para ser utilizado.
-  constructor(private comicApi: ComicService){}
+  @ViewChild('filterForm') filterForm!: NgForm;
 
-  //Al traer el servicio se puede suscribir la petición a los cambios dentro de la api. Usando this.ComicList además llenamos esta con la información de la API.
-  ngOnInit(): void{
+  constructor(private comicApi: ComicService) {}
+
+  ngOnInit(): void {
     this.comicApi.getComics().subscribe((data: any) => {
-      this.comicList = data;
-    })
+      this.comicList = [...data];
+      this.filteredList = [...this.comicList];
+    });
   }
+
   addToCart(comic: ComicI) {
     const cartItem = this.cartItems.find(item => item.title === comic.title);
     if (cartItem) {
@@ -61,10 +64,14 @@ export class ComicsComponent implements OnInit{
     this.showCart = !this.showCart;
   }
 
-  applyFilter(filterValue: any) {
-    this.filteredList = this.comicList.filter(item => {
-      return (filterValue.company.length==0 || item.company == filterValue.company) 
-      && (filterValue.title.length==0 || item.title.toLowerCase().includes(filterValue.title.toLowerCase()) || item.author.toLowerCase().includes(filterValue.author.toLowerCase())) 
+  applyFilter(filter: any): void {
+    this.filteredList = this.comicList.filter((comic) => {
+      const titleMatch =
+        !filter.text || comic.title.toLowerCase().includes(filter.text.toLowerCase());
+      const companyMatch =
+        !filter.company || comic.company.toLowerCase() === filter.company.toLowerCase();
+      return titleMatch && companyMatch;
     });
   }
+  
 }

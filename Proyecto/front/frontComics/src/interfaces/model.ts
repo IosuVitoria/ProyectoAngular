@@ -11,6 +11,15 @@ export interface ComicI{
     price: number;
 }
 
+
+export interface UserI{
+    id?: string;
+    email: string;
+    password: string;
+    role?: string;
+}
+
+
 // // El código que has proporcionado define una interfaz en TypeScript llamada ComicI. Las interfaces en TypeScript se utilizan para definir la estructura de un objeto
 //  y los tipos de datos de sus propiedades. 
 // En este caso, la interfaz ComicI define las propiedades y tipos de datos esperados para representar un objeto que representa un cómic.

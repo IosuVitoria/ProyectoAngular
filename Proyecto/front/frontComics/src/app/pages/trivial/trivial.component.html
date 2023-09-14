@@ -1,0 +1,24 @@
+
+<div class="bodyTrivial">
+<div class="trivialTitle">
+  <h2>Trivial de Marvel</h2>
+  <button (click)="seleccionarPreguntasAleatorias(cantidad)" class="buttonTrivial">Generar Test</button>
+</div>
+<div *ngFor="let pregunta of preguntasAleatorias; let i = index" class="trivial-marvel">
+  
+  <h3 class="question-text">{{ pregunta.pregunta }} </h3>
+  <ul>
+    <li *ngFor="let opcion of pregunta.opciones; let j = index"
+        [ngClass]="{
+          'correct-option': pregunta.selectedOptionIndex === j && opcion === pregunta.respuesta_correcta,
+          'incorrect-option': pregunta.selectedOptionIndex === j && opcion !== pregunta.respuesta_correcta
+        }"
+        (click)="onOpcionSeleccionada(pregunta, j)" class="option-list option">
+      {{ opcion }}
+    </li>
+  </ul>
+</div>
+
+<p class="points">Puntos: {{ puntos }}</p>
+<p  class="result">{{ calcularPuntaje() }}</p>
+</div>

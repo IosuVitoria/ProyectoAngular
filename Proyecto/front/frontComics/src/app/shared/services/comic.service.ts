@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ComicI } from 'src/interfaces/model';
+import { ComicI, UserI } from 'src/interfaces/model';
 
 @Injectable({
   providedIn: 'root'
@@ -32,4 +32,19 @@ export class ComicService {
   postComic(comic: ComicI){
     return this.http.post(`http://localhost:3000/comics`, comic);
   }
+
+  deleteComic(id: number){
+    return this.http.delete(`http://localhost:3000/comics/${id}`);
+  }
+  
+  getPreguntas(){
+    return this.http.get(" http://localhost:3000/preguntas");
+  }
+  
+  register(user: UserI){
+    return this.http.post('http://localhost:5000/users/register', user)
+  }
+ 
 }
+
+

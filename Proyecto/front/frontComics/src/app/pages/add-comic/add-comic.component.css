@@ -8,15 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1800px;
+    height: 900px;
     background-image: url("../../../assets/fondoPagina3.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
+    border-radius: 20px;   
 }
   
 .comics {
@@ -122,5 +119,3 @@ body {
     opacity: 1;
     border-radius: 30px;
 }
-  
-  
